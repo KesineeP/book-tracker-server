@@ -42,7 +42,7 @@ const updateBook = async (req, res) => {
     if (!updatedBook) {
       throw new Error("Book not found");
     }
-    res.status(200).json(book);
+    res.status(200).json(updatedBook);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
